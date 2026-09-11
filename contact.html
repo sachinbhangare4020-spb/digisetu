@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start a Project | Digisetu</title>
+<meta name="description" content="Tell Digisetu what you want to build — get a scoped, practical proposal back.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-row">
+    <a href="index.html" class="logo">digi<span class="dot">setu</span></a>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a class="nav-link" href="index.html#about">About</a></li>
+        <li class="mega-wrap" id="servicesMega">
+          <button class="nav-link mega-trigger" type="button">Services ▾</button>
+          <div class="mega-menu">
+            <div class="mega-list"></div>
+            <div class="mega-panel"></div>
+          </div>
+        </li>
+        <li><a class="nav-link" href="index.html#process">How we work</a></li>
+        <li><a class="cta-btn ghost active" href="contact.html">Start a project</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<div class="crumb"><a href="index.html">Home</a> / <span>Start a project</span></div>
+
+<div class="contact-shell">
+  <div class="contact-info">
+    <div class="eyebrow">Start a project</div>
+    <h1>Tell us what you're building.</h1>
+    <p>Fill in as much as you can — even a rough idea is enough to start. We'll come back with a clear, practical next step: what we'd build, roughly how long it takes, and what it costs.</p>
+
+    <div class="contact-detail">
+      <div>
+        <span class="label">Email</span>
+        <span class="val">hello@digisetu.com</span>
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div>
+        <span class="label">Phone / WhatsApp</span>
+        <span class="val">+91 00000 00000</span>
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div>
+        <span class="label">Response time</span>
+        <span class="val">Within 1 business day</span>
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div>
+        <span class="label">Office</span>
+        <span class="val">Add your registered address here</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-card">
+    <form id="inquiryForm">
+      <div class="form-grid">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="Business email" required>
+        </div>
+        <div class="field">
+          <label for="company">Company</label>
+          <input id="company" name="company" type="text" placeholder="Company or organisation">
+        </div>
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" placeholder="Phone or WhatsApp number">
+        </div>
+        <div class="field">
+          <label for="country">Country</label>
+          <input id="country" name="country" type="text" placeholder="Country">
+        </div>
+        <div class="field">
+          <label for="city">City</label>
+          <input id="city" name="city" type="text" placeholder="City">
+        </div>
+        <div class="field">
+          <label for="serviceSelect">Service you're looking for</label>
+          <select id="serviceSelect" name="service"></select>
+        </div>
+        <div class="field">
+          <label for="contactMethod">Preferred contact method</label>
+          <select id="contactMethod" name="contactMethod">
+            <option>Email</option>
+            <option>Phone call</option>
+            <option>WhatsApp</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="timeline">Project timeline</label>
+          <select id="timeline" name="timeline">
+            <option>Not decided yet</option>
+            <option>Within 1 month</option>
+            <option>1–3 months</option>
+            <option>3–6 months</option>
+            <option>6+ months</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="budget">Budget range (INR)</label>
+          <select id="budget" name="budget">
+            <option>Not decided yet</option>
+            <option>Under ₹1,00,000</option>
+            <option>₹1,00,000 – ₹5,00,000</option>
+            <option>₹5,00,000 – ₹15,00,000</option>
+            <option>₹15,00,000+</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="details">Tell us about your project</label>
+          <textarea id="details" name="details" placeholder="What do you want to build, who will use it, and what business outcome matters?"></textarea>
+        </div>
+        <div class="field full">
+          <label class="field-checkbox">
+            <input type="checkbox" required>
+            I agree that Digisetu may contact me about this enquiry and process my information according to the privacy policy.
+          </label>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="cta-btn">Submit enquiry →</button>
+      </div>
+      <p class="form-note">This form doesn't send anywhere yet — wire it to your email service, CRM, or backend endpoint before going live. See the comment in js/main.js.</p>
+      <div id="form-success">Thanks — your enquiry has been recorded. We'll get back to you within 1 business day.</div>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="logo">digi<span class="dot">setu</span></a>
+      <p style="margin-top:14px; font-size:.9rem;">Software engineering across 20 capability areas — planned, built and supported by one accountable team.</p>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#process">How we work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Popular categories</h5>
+      <ul>
+        <li><a href="services.html?cat=web-development">Web Development</a></li>
+        <li><a href="services.html?cat=ai-and-machine-learning">AI & Machine Learning</a></li>
+        <li><a href="services.html?cat=fintech">FinTech</a></li>
+        <li><a href="services.html?cat=blockchain-and-web3">Blockchain & Web3</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>More categories</h5>
+      <ul>
+        <li><a href="services.html?cat=mobile-app-development">Mobile App Development</a></li>
+        <li><a href="services.html?cat=cloud-and-devops">Cloud & DevOps</a></li>
+        <li><a href="services.html?cat=cybersecurity">Cybersecurity</a></li>
+        <li><a href="services.html">View all →</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li>hello@digisetu.com</li>
+        <li>+91 00000 00000</li>
+        <li><a href="contact.html">Request a proposal →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Digisetu. All rights reserved.</span>
+    <span>Placeholder contact details — replace before launch.</span>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
